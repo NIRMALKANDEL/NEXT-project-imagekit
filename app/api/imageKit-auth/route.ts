@@ -12,8 +12,8 @@ export async function GET() {
         return Response.json({ authenticationParameters, publicKey: process.env.NEXT_PUBLIC_IMAGEKIT_PUBLIC_KEY })
     }
     catch (error) {
-        console.error("Error in GET /api/upload-auth:", error)
-        return new Response("Internal Server Error", { status: 500 })
+        console.error("Error in imagekit GET /api/upload-auth:", error)
+        return new Response("Internal imagekit Server Error", { status: 500 })
 
     }
 }
